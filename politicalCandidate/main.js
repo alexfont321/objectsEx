@@ -97,11 +97,18 @@ createArticle.id = elizabethSingler.district;
 
 console.log(createArticle)
 
-let targetID = document.getElementById('Tennessee-5th-District');
+// const targetId = document.querySelector('article');
 
+// console.log(targetId)
 
-targetID.appendChild = "<p>hey gang</p>";
+// function platformData () {
+//     `<p>${elizabethSingler.platform.jobs}</p><p>$${elizabethSingler.platform.Crime}</p>`
+// }
 
-const bodyElement = document.querySelector("body");
+createArticle.innerHTML = `<p>${elizabethSingler.platform.Crime}</p><p>${elizabethSingler.platform.jobs}</p>`;
+
+const bodyElement = document.querySelector(".add-content");
+
+bodyElement.appendChild(createArticle);
 
 
