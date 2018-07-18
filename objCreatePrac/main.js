@@ -44,4 +44,15 @@ console.log(starbucks);
 
 ////Part 3 
 
+const jobsArray = [];
 
+jobsArray.push(ChickFilA, burgerKing, mcDonalds, starbucks);
+
+console.log(jobsArray);
+
+jobsArray.forEach(function (element) {
+    const createArticle = document.createElement("article");
+    document.querySelector("section").appendChild(createArticle);
+    createArticle.id = element.business;
+
+})
